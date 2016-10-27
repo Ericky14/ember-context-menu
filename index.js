@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-context-menu'
+  name: 'ember-context-menu',
+
+  included: function(app, parentAddon) {
+    this._super.included(arguments);
+  }
 };
